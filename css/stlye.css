@@ -1,40 +1,126 @@
-header {
+body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    background-color: #f8fbca;
-    display: flex;
-    justify-content: center;
+    color: #4C4A59;
+}
+
+header {
     position: relative;
-    z-index: 10;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    background-color: #FFFFFF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+header .navbar {
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0;
+}
+
+header #navbarNavAltMarkup {
+    flex-basis: 100%;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+header .navbar-toggler {
+    position: inherit;
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+header nav a img {
+    width: 30em;
     margin-top: 0;
 }
 
-h2,
+header nav ul li a {
+    text-decoration: none;
+}
+
+.navbar-nav {
+    color: #4C4A59;
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+    margin-left: 1em;
+    font-size: 2.5em;
+}
+
+.carrito {
+    width: 1.5em;
+    color: #4C4A59;
+}
+
+.container {
+    gap: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card-image {
+    text-align: center;
+    width: 100%;
+}
+
+.card-name {
+    text-align: center;
+    color: #4C4A59;
+    font-size: 1em;
+}
+
 h3 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
     margin-top: 25px;
-}
-
-.vinos ul {
-    text-align: center;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    color: green;
-
+    font-size: 50px;
 }
 
 .div-cotizar p {
     text-align: center;
 }
 
-
-
-
 footer {
     margin-top: 4em;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+footer #rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100px;
+    margin: 2em auto 0;
+}
+
+footer #rrss svg {
+    color: #4C4A59;
+    transition-duration: all 2s;
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+    font-size: 1.8em;
+}
+
+footer #rrss svg .hover {
+    transform: scale(1.2, 1.2);
+    color: #4C4A59;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 0;
 }

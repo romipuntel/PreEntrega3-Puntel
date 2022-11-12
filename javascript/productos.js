@@ -1,0 +1,15 @@
+const productos = [{ id: 1, imagen: "assets/poligonoMalbec.jpeg", nombre: "Poligono Malbec 2019 ", precio: "$33" },
+                   { id: 2, imagen: "assets/closDeLosSiete.jpg", nombre: "Clos de los Siete Red Malbec 2019", precio: "$22" },
+                   { id: 3, imagen: "assets/susanaBalboMalbec.jpg", nombre: "Susana Balbo Malbec 2019", precio: "$24" },
+                   { id: 4, imagen: "assets/joseZucardiMalbec.jpg", nombre: "Jose Zucardi Malbec 2016", precio: "$46" },
+                   { id: 5, imagen: "assets/altoDelPlataCabernet.jpg", nombre: "Tereza Altos del Plata Cabernet Sauvignon 2020", precio: "$10" },
+                   { id: 6, imagen: "assets/elEstecoMalbec.jpg", nombre: "El Esteco Malbec 2020", precio: "$21" },
+                   { id: 7, imagen: "assets/surdeLosAndesCabernet.jpg", nombre: "Sur de los Andes Malbec Cabernet Sauvignon Blend 2017", precio: "$16" },
+                   { id: 8, imagen: "assets/elEnemigoChardonnay.jpg", nombre: "El Enemigo Chardonnay 2019", precio: "$28" },
+                   { id: 9, imagen: "assets/lucaMalbec.jpg", nombre: "Luca Old Malbec 2019", precio: "$38" },
+                   { id: 10, imagen: "assets/susanaBalboTorrotes.jpg", nombre: "Susana Balbo Crios Torrontes 2021", precio: "$13" },
+                   { id: 11, imagen: "assets/trapicheMalbec.jpg", nombre: "Trapiche Malbec 2021", precio: "$10" },
+                   { id: 12, imagen: "assets/catenaChardonnay.jpg", nombre: "Catena Chardonnay 2020", precio: "$19" },
+                   { id: 13, imagen: "assets/zoloSauvignonBlanc.jpg", nombre: "Zolo Sauvignon Blanc 2020", precio: "$15" },
+                   { id: 14, imagen: "assets/arumaMalbec.jpg", nombre: "CARO Aruma Malbec 2021", precio: "$23" }]
+
