@@ -13,3 +13,5 @@ const productos = [{ id: 1, imagen: "assets/poligonoMalbec.jpeg", nombre: "Polig
                    { id: 13, imagen: "assets/zoloSauvignonBlanc.jpg", nombre: "Zolo Sauvignon Blanc 2020", precio: 15 },
                    { id: 14, imagen: "assets/arumaMalbec.jpg", nombre: "CARO Aruma Malbec 2021", precio: 23 },
                    { id: 15, imagen: "assets/padrillo.jpg", nombre: "Finca de los Padrillos Malbec 2019 ", precio: 12 }]
+
+// los precios son en Dolares porque quiero hacer una pagina para el exterior.
