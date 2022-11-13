@@ -67,15 +67,35 @@ header nav ul li a {
     justify-content: flex-start;
 }
 
-.card-image {
+.card {
+    height: 300px;
+    width: 300px;
+    border: none;
+    margin: 0 auto;
+}
+
+.card-price {
     text-align: center;
-    width: 100%;
+    font-size: 1.5em;
+}
+
+.card-image {
+    justify-content: center;
+    width: 17em;
+    margin-top: 3em;
+    margin-left: 2em;
 }
 
 .card-name {
     text-align: center;
     color: #4C4A59;
-    font-size: 1em;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.card-button {
+    align-self: center;
+    margin-top: 1em;
 }
 
 h3 {
@@ -92,7 +112,7 @@ h3 {
 }
 
 footer {
-    margin-top: 4em;
+    margin-top: 5em;
     margin-bottom: 0;
     width: 100%;
 }
