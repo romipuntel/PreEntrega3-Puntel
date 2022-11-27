@@ -15,9 +15,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./javascript/plantilla.js"></script>
-    <script src="javascript/carrito.js"></script>
+    <script src="./javascript/carrito.js"></script>
     <script src="./javascript/productos.js"></script>
-    <script defer src="./javascript/dom.js"></script>
 
 </head>
 
@@ -34,7 +33,7 @@
                     <img src="./assets/logo.png" alt="logo"></a>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="./index.html">Inicio</a>
                         <a class="nav-link" href="./contacto.html">Contacto</a>
                         <a href="./checkout.html">
                             <img src="assets/cart3.svg" class="carrito">
@@ -44,23 +43,27 @@
             </div>
         </nav>
     </header>
-
-
-    <div>
-        <div class="contenedor-imagen">
-            <img src="assets/vinos.jpg" alt="uvas">
-        </div>
-
-    </div>
-    <h3>Tienda de Vinos</h3>
-
     <main>
-        <div class="container" id="container">
+        <div class="container mt-5 mb-5">
+            <div class="d-flex justify-content-center row">
+                <div class="col-md-8">
+                    <div class="p-2">
+                        <h1>Shopping cart</h1>
+                        <div class="d-flex flex-row align-items-center pull-right"><span class="mr-1">Sort
+                                by:</span><span class="mr-1 font-weight-bold">Price</span><i
+                                class="fa fa-angle-down"></i></div>
+                    </div>
+                    <div class="shoppingCardItemContainer">
 
-
+                    </div> 
+                            
+                    <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><button
+                            class="btn btn-warning btn-block btn-lg ml-2 pay-button" type="button">Proceed to
+                            Pay</button></div>
+                </div>
+            </div>
         </div>
     </main>
-
     <footer>
         <nav id="rrss">
             <a href="https://www.instagram.com/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="20"

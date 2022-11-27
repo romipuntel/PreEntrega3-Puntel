@@ -1,4 +1,8 @@
-//ESTE ARCHIVO ES SOLO PRUEBA, NO ESTA FUNCIONANDO, ES PORQUE ESTOY INTENTANDO HACER LA PAGINA DE CHECKOUT Y HACER UN CARRITO FUNCIONAL
+const carrito = []
+const guardarCarrito = () => (carrito.length > 0) && localStorage.setItem("Carritovinos", JSON.stringify(carrito))
+const recuperarCarrito = () => JSON.parse(localStorage.getItem("Carritovinos")) || []
+carrito.push(...recuperarCarrito())
+
 
 function addToCartClicked(event) {
     const button = event.target
