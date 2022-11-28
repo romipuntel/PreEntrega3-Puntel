@@ -20,6 +20,8 @@ const activarBotones = () => {
         btn.addEventListener("click", () => {
             let resultado = productos.find(prod => prod.id === parseInt(btn.id))
             carrito.push(resultado)
+            localStorage.setItem("miCarrito", JSON.stringify(carrito))
+            alertProductoCarrito(` se agregó al carrito`)
 
         })
     })

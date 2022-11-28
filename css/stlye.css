@@ -116,6 +116,8 @@ h3 {
 h1 {
     font-size: 3em;
     text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
 
 }
 
@@ -153,9 +155,11 @@ form input[type=reset] {
     border: 0;
     padding: 2px 10px;
     background-color: #4C4A59;
-    margin-top: 12em;
 }
 
+.botonesForm {
+    margin-bottom: 12em;
+}
 
 footer {
     margin-top: 5em;
