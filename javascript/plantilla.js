@@ -11,5 +11,13 @@ function retornoCard(producto) {
             </div> 
         </div>`
 }
+function armarTabla(vinos) {
+  return `<tr>
+            <td class="centrar img-xx-large"><img src=${producto.imagen}></td>
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td><button class="button button-outline button-delete" id="${producto.nombre}" title="Quitar del carrito">🗑</button></td>
+    </tr>`
+}
 
 
