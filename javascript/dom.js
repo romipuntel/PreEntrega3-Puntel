@@ -1,13 +1,10 @@
 const container = document.getElementById("container")
 const imgCarrito = document.getElementById("imgcarrito")
-const inputSearch = document.querySelector("input#inputSearch")
 
-function cargarProductos(array) {
+function cargarProductos(wine) {
     let contenido = ""
-    if (array.length > 0) {
-        array.forEach(producto => {
-            contenido += retornoCard(producto)
-        })
+    if (wine.length > 0) {
+        wine.forEach(producto => contenido += retornoCard(producto))
         container.innerHTML = contenido
     }
 }

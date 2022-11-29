@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="./css/stlye.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="./javascript/carrito.js"></script>
+    <script src="./javascript/plantilla.js"></script>
+    <script src="./javascript/checkout.js"></script>
+
+
 
 </head>
 
@@ -46,21 +49,23 @@
         <main>
             <section>
                 <h1>Tu Carrito</h1>
-                <table>
-                    <thead class="encabezado">
-                        <tr>
-                            <th id="tablehead">Producto</th>
-                            <th id="tablehead">Descripción</th>
-                            <th id="tablehead">Importe</th>
-                            <th id="tablehead">Quitar</th>
-                        </tr>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Eliminar</th>
+                      </tr>
                     </thead>
-                    <tbody class="shoppingCardItemContainer">
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4<img src="" width="30px"></td>
+                    <tbody class="checkoutCarrito">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td></td>
+                      </tr>
                         </tr>
                     </tbody>
                 </table>
