@@ -102,6 +102,44 @@ header nav ul li a {
     margin-top: 1em;
 }
 
+#boton-carrito {
+    border: none;
+    color: #4C4A59;
+    font-size: 25px;
+    background-color: #FEFDF2;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+
+#compra {
+    border: none;
+    background-color: #4C4A59;
+    align-items: center;
+}
+
+#boton-carrito:hover {
+    cursor: pointer;
+    color: white;
+    background-color: royalblue;
+}
+
+#boton-carrito:focus {
+    outline: none;
+}
+
+.titulos {
+    font-size: 18px
+}
+
+.checkoutCarrito {
+    font-size: 14px;
+}
+
+#compra {
+    margin-left: 67em;
+}
+
 h3 {
     display: flex;
     justify-content: center;
@@ -128,6 +166,10 @@ table {
     text-align: center;
 }
 
+.precioProducto {
+    font-size: 18px;
+    text-align: center;
+}
 
 table {
     margin: 0 auto;
@@ -169,6 +211,10 @@ form input[type=reset] {
 
 .botonesForm {
     margin-bottom: 12em;
+}
+
+.botonComprar {
+    text-align: center;
 }
 
 footer {

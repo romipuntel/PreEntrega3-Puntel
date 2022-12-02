@@ -1,5 +1,14 @@
 const container = document.getElementById("container")
 const imgCarrito = document.getElementById("imgcarrito")
+const URL = "json/productos.json"
+const productos = []
+
+fetch(URL)
+    .then((response) => data = response.json())
+    .then((data) => productos.push(...data))
+    .then(() => cargarProductos(productos))
+    .then(() => activarBotones())
+
 
 function cargarProductos(wine) {
     let contenido = ""
@@ -17,7 +26,7 @@ const activarBotones = () => {
         btn.addEventListener("click", () => {
             let resultado = productos.find(prod => prod.id === parseInt(btn.id))
             carrito.push(resultado)
-            localStorage.setItem("carritoVinos", JSON.stringify(carrito))
+            localStorage.setItem("carritoVino", JSON.stringify(carrito))
             alertProductoCarrito(` se agregó al carrito`)
 
         })
@@ -25,4 +34,5 @@ const activarBotones = () => {
 }
 
 activarBotones()
+
 

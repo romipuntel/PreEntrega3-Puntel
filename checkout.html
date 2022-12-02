@@ -16,8 +16,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./javascript/plantilla.js"></script>
-    <script src="./javascript/checkout.js"></script>
-
+    <script src="./javascript/alert.js"></script>
+    <script src="./javascript/compra.js"></script>
+    <script defer src="./javascript/checkout.js"></script>
 
 
 </head>
@@ -38,7 +39,8 @@
                         <a class="nav-link" href="./index.html">Inicio</a>
                         <a class="nav-link" href="./contacto.html">Contacto</a>
                         <a href="./checkout.html">
-                            <img src="assets/cart3.svg" class="carrito">
+                            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span
+                                    id="contadorCarrito">0</span></button>
                         </a>
                     </div>
                 </div>
@@ -48,27 +50,31 @@
     <main>
         <main>
             <section>
-                <h1>Tu Carrito</h1>
-                <table class="table">
+                <h1>SHOPPING CART</h1>
+                <table id="carrito-contenedor">
                     <thead>
-                      <tr>
-                        <th scope="col">Producto</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Eliminar</th>
-                      </tr>
+                        <tr class="titulos">
+                            <th scope="col">Producto</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Eliminar</th>
+                        </tr>
                     </thead>
                     <tbody class="checkoutCarrito">
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td></td>
-                      </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                         </tr>
                     </tbody>
                 </table>
+                <div>
+                    <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                    <button id="compra" class="botonComprar">Comprar</button>
+                </div>
             </section>
         </main>
         <footer>

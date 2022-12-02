@@ -1,4 +1,5 @@
-const carrito = JSON.parse(localStorage.getItem("carritoVinos")) || []
+const carrito = JSON.parse(localStorage.getItem("carritoVino")) || []
+const tbody = document.querySelector("tbody")
 
 function retornoCard(producto) {
   return `<div class="card" id="card${producto.id}">
@@ -20,6 +21,7 @@ function armarTabla(producto) {
             <td><img src ="${producto.imagen}" class="imagen"></td>
             <td>${producto.nombre}</td>
             <td>${producto.precio}</td>
-            <td><button class="button button-outline button-delete" id="${producto.nombre}" title="Quitar del carrito">🗑</button></td>
+            <td><button = "eliminarDelCarrito(${producto.id})" "class="button button-outline button-delete" id="${producto.nombre}" title="Quitar del carrito"<i class = "fas fa-trash-alt"></button></td>
     </tr>`
 }
+
