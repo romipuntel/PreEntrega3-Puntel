@@ -11,7 +11,7 @@ function alertProductoCarrito() {
 }
 
 function alertProductoCarrito() {
-   productoEliminado({
+   Toastify({
         text: 'Producto eliminado del carrito',
         duration: 1500,
         gravity: 'top',
@@ -23,15 +23,21 @@ function alertProductoCarrito() {
 }
 
 
-const alerta = (toast, timer, icon, position, title, text )=> {
+
+function confirmarCompra() {
     Swal.fire({
-        toast: toast || false, 
-        position: position || 'center', // top-end, bottom-end, top-start, center
-        icon: icon || 'info',     //success, warning, error, question, info
-        title: title || '',
-        text: text || '',
-        showConfirmButton: true,
-        confirmButtonText: 'Aceptar',
-        timer: timer
+        title: "Quiere finalizar su compra?",
+        icon: "success",
+        showDenyButton: true,
+        confirmButtonText: "Aceptar",
+        denyButtonText: "Cancelar"
     })
+        .then((result) => {
+            if (result.isConfirmed) {
+                console.log("El usuario finalizo la compra")
+            } else if (result.isDenied) {
+                console.warn("El usuario no finalizo")
+            }
+        })
 }
+

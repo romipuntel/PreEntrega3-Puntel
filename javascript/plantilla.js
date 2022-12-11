@@ -1,7 +1,10 @@
-const carrito = JSON.parse(localStorage.getItem("carritoVino")) || []
-const tbody = document.querySelector("tbody")
+const guardarCarrito = () => (carrito.length > 0) && localStorage.setItem("carritoVino", JSON.stringify(carrito()))
+const recuperarCarrito = () => JSON.parse(localStorage.getItem("carritoVino")) || []
 
-function retornoCard(producto) {
+//const carrito = JSON.parse(localStorage.getItem("carritoVino")) || []
+
+
+function catalogo(producto) {
   return `<div class="card" id="card${producto.id}">
             <div class="card-image"><img src ="${producto.imagen}" class="imagen"></div>
             <div class="card-name">${producto.nombre}</div>
@@ -16,7 +19,7 @@ function retornoCard(producto) {
 }
 
 
-function armarTabla(producto) {
+function productosEnCarrito(producto) {
   return `<tr>
             <td><img src ="${producto.imagen}" class="imagen"></td>
             <td>${producto.nombre}</td>
