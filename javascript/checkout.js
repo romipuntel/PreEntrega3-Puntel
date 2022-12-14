@@ -1,13 +1,12 @@
-const comprarProductos = document.querySelectorAll("#compra")
-//const botonesEliminar = document.querySelectorAll("button.button-outline.button-delete")
 const carritoVino = JSON.parse(localStorage.getItem("carritoVino")) || []
 
 function cargarCarrito() {
     let tablaHTML = ""
     const tbody = document.querySelector("tbody")
-    if (carritoVino.length > 0) {
-        carritoVino.forEach(producto => tablaHTML += productosEnCarrito(producto))
-        //comprarProductos.addEventListener(click, finalizarCompra)
+    if (carritoVino.length >= 0) {
+        carritoVino.forEach(vino => tablaHTML += productosEnCarrito(vino))
+
+
 
     } else {
         (carritoVino.length == 0)(`No se encuentran productos en el carrito`)
@@ -28,25 +27,20 @@ precioTotal.innerHTML = carritoVino.reduce((acc, prod) => acc + prod.precio, 0)
 // no Andaaa
 
 
-//const respuesta = carritoVino.findIndex(producto => producto.id === producto.id)
-
 function eliminarDelCarrito() {
-    const botonesEliminar = document.querySelectorAll("button.button-outline.button-delete")
-    botonesEliminar.forEach(btn => {
+    const buttonsDelete = document.querySelectorAll("button.button.button-outline.button-delete")
+    buttonsDelete.forEach(btn => {
+        debugger
         btn.addEventListener("click", () => {
-            let respuesta = carritoVino.findIndex(producto => producto.nombre === btn.nombre)
-            if (respuesta > -1) {
-                carritoVino.splice(respuesta, 1)
-                //productoEliminado(`Se quitó elimino del carrito`)
-                localStorage.setItem("carritoVino", JSON.stringify(carrito))
-                //guardarCarrito()
+            let buscarCarrito = carritoVino.findIndex(vino => vino.nombre === btn.id)
+            if (buscarCarrito > -1) {
+                carritoVino.splice(buscarCarrito, 1)
+                localStorage.setItem("carritoVino", JSON.stringify(carritoVino))
                 recuperarCarrito()
                 eliminarDelCarrito()
             }
         })
-
     })
 }
-
 eliminarDelCarrito()
 

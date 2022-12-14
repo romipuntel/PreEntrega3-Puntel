@@ -1,8 +1,6 @@
 const guardarCarrito = () => (carrito.length > 0) && localStorage.setItem("carritoVino", JSON.stringify(carrito()))
 const recuperarCarrito = () => JSON.parse(localStorage.getItem("carritoVino")) || []
 
-//const carrito = JSON.parse(localStorage.getItem("carritoVino")) || []
-
 
 function catalogo(producto) {
   return `<div class="card" id="card${producto.id}">
@@ -19,12 +17,12 @@ function catalogo(producto) {
 }
 
 
-function productosEnCarrito(producto) {
+function productosEnCarrito(vino) {
   return `<tr>
-            <td><img src ="${producto.imagen}" class="imagen"></td>
-            <td>${producto.nombre}</td>
-            <td>${producto.precio}</td>
-            <td><button = "eliminarDelCarrito(${producto.id})" "class="button button-outline button-delete" id="${producto.nombre}" title="Quitar del carrito"<i class = "fas fa-trash-alt"></button></td>
+            <td><img src ="${vino.imagen}" class="imagen"></td>
+            <td>${vino.nombre}</td>
+            <td>${vino.precio}</td>
+            <td><button = "eliminarDelCarrito(${vino.id})" "class="button button-outline button-delete" id="${vino.nombre}" title="Quitar del carrito"<i class = "fas fa-trash-alt"></button></td>
     </tr>`
 }
 
