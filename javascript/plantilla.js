@@ -22,7 +22,7 @@ function productosEnCarrito(vino) {
             <td><img src ="${vino.imagen}" class="imagen"></td>
             <td>${vino.nombre}</td>
             <td>${vino.precio}</td>
-            <td><button = "eliminarDelCarrito(${vino.id})" "class="button button-outline button-delete" id="${vino.nombre}" title="Quitar del carrito"<i class = "fas fa-trash-alt"></button></td>
-    </tr>`
+            <td><button class="button button-outline button-delete" id="${vino.nombre}" title="eliminar del carrito"><i class = "fas fa-trash-alt"></i></button></td>
+          </tr>`
 }
 

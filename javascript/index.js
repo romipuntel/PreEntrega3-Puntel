@@ -1,6 +1,6 @@
+const carritoVino = JSON.parse(localStorage.getItem("carritoVino")) || []
 const container = document.getElementById("container")
 const imgCarrito = document.getElementById("imgcarrito")
-const botones = document.querySelectorAll("button.button.button-outline.button-add")
 const URL = "json/productos.json"
 const productos = []
 
@@ -23,12 +23,13 @@ cargarVinos(productos)
 
 
 const agregarAlCarrito = () => {
+    const botones = document.querySelectorAll("button.button-outline.button-add")
     botones.forEach(btn => {
         btn.addEventListener("click", () => {
             let resultado = productos.find(prod => prod.id === parseInt(btn.id))
-            carrito.push(resultado)
-            localStorage.setItem("carritoVino", JSON.stringify(carrito))
-            Toastify(` se agregó al carrito`)
+            carritoVino.push(resultado)
+            localStorage.setItem("carritoVino", JSON.stringify(carritoVino))
+            alertProductoCarrito(` se agregó al carrito`)
 
         })
     })
