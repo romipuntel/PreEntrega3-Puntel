@@ -70,6 +70,7 @@ const finalizarCompra = () => {
                     localStorage.removeItem("carritoVino"),
                         carritoVino.length = 0,
                         cargarCarrito()
+                        totalCarrito()
 
                 } else if (
                     result.dismiss === Swal.DismissReason.cancel
